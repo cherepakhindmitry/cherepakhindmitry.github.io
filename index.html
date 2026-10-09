@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастерская Черепахина | 3D-печать для лодок</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=fXnO_5sBt_cfbeIRdkASwXYW2HGnvSJvWfqoI_DUM56n-P2rsRONWWra5PwxYDboslFT3589kwvgQsTZ1U8JgcSOE7Y_MaPaWKXovQugIGxWgYmPnXKOJK7nBd7ejvIWfaBKejoNdysH0AyRw0ZARo72tExo2CZvLCOxpZ6jffdnbtt82ggujv7A-YPtunc-8UE5rt_SKM7ganIYK58FH3wYgZVAKcW5ZeA1rI9PBykPJiyDbrNnMsY_nDYSAp5ahDU5vtShD5KazzmdItDIyHWSoBknQEzY7Zgi50ZltVmzTBSao5rT9I6HxAl_3qr6MkQriDuXrfGamwnJSC6qOQ_8yiHDv6yKhijTSO5iVUk" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jb250cmlidXRpb24udXNlcmNvbnRlbnQuZ29vZ2xlLmNvbS9kb3dubG9hZD9jPUNneGlZWEprWDNOMGIzSmhaMlVTVUJJTmNtVnpjRzl1YzJWZlpHRjBZUm9fQ2pCalpUVmpOMk5pWkdZeFlqWmpOelE0TURBd05qVmtOV1EyWldZME5UaGtOVEF5WmpCalpEQm1NR1F3Wm1VNE16TVNDeElIRU5XYzBwU2hHaGdCJmZpbGVuYW1lPXdlYnNpdGVfY2hlcmVwYWtoaW5fYmcuaHRtbCZvcGk9MTAzMTM1MDUwJmF1dGh1c2VyPTE"/><style>
+        :root {
+            --primary: #005B9F;
+            --primary-hover: #00467A;
+            --bg: #F4F7F9;
+            --card-bg: #FFFFFF;
+            --text-main: #2C3E50;
+            --text-muted: #7F8C8D;
+            --accent: #E67E22;
+        }
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+        header { background-color: var(--card-bg); padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .logo { font-size: 22px; font-weight: 800; color: var(--primary); letter-spacing: 0.5px; text-transform: uppercase; }
+        .contact-vk { color: #0077FF; font-weight: 600; text-decoration: none; font-size: 16px; transition: opacity 0.3s; }
+        .contact-vk:hover { opacity: 0.8; }
+        
+        /* Измененный блок hero с фоном и затемнением */
+        .hero { 
+            text-align: center; 
+            padding: 100px 20px; 
+            background: linear-gradient(rgba(14, 25, 37, 0.75), rgba(14, 25, 37, 0.85)), url('https://images.unsplash.com/photo-1544253303-34e8f3d6b05e?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+            border-bottom: 1px solid #EAECEE; 
+        }
+        .hero h1 { font-size: 42px; margin-bottom: 15px; color: #FFFFFF; text-shadow: 0 2px 5px rgba(0,0,0,0.5); }
+        .hero p { font-size: 19px; margin-bottom: 30px; color: #EAECEE; max-width: 700px; margin-left: auto; margin-right: auto; text-shadow: 0 1px 3px rgba(0,0,0,0.5); font-weight: 400; }
+        
+        .section { padding: 60px 20px; max-width: 1100px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 32px; color: var(--primary); margin-bottom: 40px; }
+        
+        .about-block { background-color: var(--card-bg); padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 50px; border-left: 5px solid var(--accent); }
+        .about-block h3 { margin-top: 0; color: var(--primary); font-size: 24px; margin-bottom: 15px; }
+        .about-block p { margin-bottom: 15px; font-size: 16px; color: var(--text-main); }
+        
+        .features { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+        .feature-card { background-color: var(--card-bg); padding: 30px 20px; border-radius: 8px; width: 30%; min-width: 260px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); }
+        .feature-card h3 { color: var(--primary); margin-top: 0; }
+        
+        .video-container { background-color: var(--card-bg); padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
+        .video-placeholder { width: 100%; max-width: 800px; height: 450px; background-color: var(--bg); margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--text-muted); border-radius: 8px; border: 2px dashed #BDC3C7; }
+        
+        .catalog { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+        .product-card { background-color: var(--card-bg); border-radius: 8px; overflow: hidden; width: 320px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding-bottom: 20px; }
+        .product-img { width: 100%; height: 240px; background-color: var(--bg); display: flex; justify-content: center; align-items: center; color: var(--text-muted); margin-bottom: 15px; }
+        .product-title { font-size: 20px; font-weight: 700; margin-bottom: 10px; color: var(--text-main); padding: 0 15px; }
+        .product-price { font-size: 24px; color: var(--accent); font-weight: bold; margin-bottom: 20px; }
+        .buttons-group { display: flex; flex-direction: column; gap: 10px; padding: 0 25px; }
+        .btn { padding: 12px; border-radius: 6px; font-weight: 600; text-decoration: none; display: block; transition: 0.3s; font-size: 15px; }
+        .btn-avito { background-color: #97C139; color: white; }
+        .btn-avito:hover { background-color: #84A931; }
+        .btn-disabled { background-color: #F0F3F4; color: #BDC3C7; cursor: default; pointer-events: none; }
+        
+        footer { background-color: var(--card-bg); text-align: center; padding: 30px; border-top: 1px solid #EAECEE; color: var(--text-muted); margin-top: 20px; }
+        @media (max-width: 768px) { .feature-card { width: 100%; } .hero h1 { font-size: 28px; } .about-block { padding: 25px; } .hero { padding: 60px 20px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Мастерская Черепахина</div>
+        <a href="https://vk.com/ваша_группа" target="_blank" class="contact-vk">Связаться в VK</a>
+    </header>
+
+    <section class="hero">
+        <h1>Инженерный подход к комфорту на воде</h1>
+        <p>Ротаторы, кронштейны, адаптеры и кастомная 3D-печать. Создаю надежные решения для частных рыболовов и профессиональных студий тюнинга.</p>
+    </section>
+
+    <section class="section">
+        <div class="about-block">
+            <h3>Здравствуйте! Меня зовут Дмитрий Черепахин.</h3>
+            <p>Я — инженер, увлеченный рыболов и основатель мастерской. Рыбалка для меня — это любимое дело. Я убежден, что настоящий комфорт на водоеме начинается с мелочей: когда всё оборудование закреплено надежно, приборы стоят на своих местах, а под рукой царит порядок.</p>
+            <p><strong>Что делает моя мастерская:</strong><br>
+            • Ротаторы и кронштейны для эхолокации.<br>
+            • Адаптеры, переходники и комплектующие для лодок и моторов.<br>
+            • Держатели удилищ, органайзеры и элементы обустройства борта.<br>
+            • Разработка и 3D-печать кастомных деталей на заказ.</p>
+        </div>
+
+        <h2 class="section-title">Почему выбирают мою мастерскую?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Материал под задачу</h3>
+                <p>Я не ограничиваюсь PETG. Использую PLA, ABS и прочные композиты. Подбираю материал так, чтобы зимние аксессуары переносили мороз, а летние — не боялись солнца и вибраций.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Доверие профессионалов</h3>
+                <p>Мои изделия заказывают не только увлечённые рыболовы, но и крупные лодочные сервисы и студии тюнинга для модернизации катеров своих клиентов.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Личная гарантия</h3>
+                <p>Делаю вещи как для себя. Если обнаружился дефект или что-то пошло не так — я без споров и лишних вопросов заменю деталь на новую за свой счёт.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Тестирую на практике</h2>
+        <div class="video-container">
+            <div class="video-placeholder">
+                <span>Здесь будет ваше видео с выезда или обзора из VK Видео / RuTube</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="section">
+        <h2 class="section-title">Каталог изделий</h2>
+        <div class="catalog">
+            <div class="product-card">
+                <div class="product-img">Место под фото: Держатель удочки</div>
+                <div class="product-title">Держатель удочки на ликтрос</div>
+                <div class="product-price">От 500 ₽</div>
+                <div class="buttons-group">
+                    <a href="https://avito.ru" target="_blank" class="btn btn-avito">Купить на Авито</a>
+                    <a href="#" class="btn btn-disabled">Ozon (Скоро)</a>
+                    <a href="#" class="btn btn-disabled">Wildberries (Скоро)</a>
+                    <a href="#" class="btn btn-disabled">Яндекс Маркет (Скоро)</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">Место под фото: Адаптер Yamaha</div>
+                <div class="product-title">Адаптер для мотора Yamaha</div>
+                <div class="product-price">От 800 ₽</div>
+                <div class="buttons-group">
+                    <a href="https://avito.ru" target="_blank" class="btn btn-avito">Купить на Авито</a>
+                    <a href="#" class="btn btn-disabled">Ozon (Скоро)</a>
+                    <a href="#" class="btn btn-disabled">Wildberries (Скоро)</a>
+                    <a href="#" class="btn btn-disabled">Яндекс Маркет (Скоро)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Мастерская Черепахина. <a href="https://vk.com/ваша_группа" target="_blank" class="contact-vk" style="font-size: 14px; margin-left: 10px;">Мы ВКонтакте</a></p>
+    </footer>
+</body>
+</html>
